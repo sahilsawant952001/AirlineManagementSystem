@@ -1,0 +1,29 @@
+<%- include('partials/header3') -%>
+    <body>
+       <center>
+            <div class="card">
+                <div class="card-body">
+                    <div class="info-col">
+                        <h2>CONFIRMED TICKETS OF</h2>  
+                        <h3>FLIGHT NO : <%= NO %></h3>
+                        <h4><%= SRC %> TO <%= DEST %></h4>
+                        <h5>DATE OF JOURNEY <%= DOJ %></h5>
+                    </div>
+                    <table border="1" cellpadding = 10>
+                        <tr>
+                            <th>TICKET NO</th>
+                            <th>FNAME</th>
+                            <th>LNAME</th>
+                            <th>CLASS</th>
+                            <th>SEAT NO</th>
+                        </tr>
+                       <% for(var i=0;i < TDATE.length ;i++) { %>
+                       <tr> <td><%= TDATE[i].TICKET_NO %></td> <td><%= TDATE[i].FNAME %></td> <td><%= TDATE[i].LNAME %></td> <td><%= TDATE[i].CLASS %> <td><%= TDATE[i].SEAT_NO %></tr>
+                       <% } %>
+                       </table>
+                </div>
+            </div>
+       </center>
+<%- include('partials/footer2') -%>
+
+

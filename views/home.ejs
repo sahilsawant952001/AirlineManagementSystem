@@ -1,0 +1,88 @@
+<%- include('partials/header') -%>
+<div id="head">
+    <nav class="navbar navbar-expand-lg navbar-dark nav-font">
+        <div id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:3000/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Instructions</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="main-heading">
+        <h1>MUMBAI INTERNATIONAL AIRPORT</h1>
+        <h4>AIRLINE MANAGEMENT SYSTEM</h4>
+    </div>
+</div>
+<div id="mid">
+    <h1>Explore !</h1>
+     <div class="row">
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">QUERY</h5>
+                  <p class="card-text">To Query About Flights And Airlines And Employees</p>
+                  <form action="/query">
+                      <input type="submit" value="Click Here" class="btn btn-outline-secondary btn-block">
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">View</h5>
+                  <p class="card-text">To See All Data About Cities,Airplanes,Airports,Airlines</p>
+                  <form action="/view" method="GET">
+                    <input type="submit" value="Click Here" class="btn btn-outline-secondary btn-block">
+                  </form>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">EMPLOYEE</h5>
+                  <p class="card-text">To Manage Data Of Employees Of This Airport</p>
+                  <form action="/employee" method="GET">
+                    <input type="submit" value="Click Here" class="btn btn-outline-secondary btn-block">
+                  </form>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">UPDATE FLIGHT INFO</h5>
+                  <p class="card-text">To Update Arrival And Departure Time Of Flight</p>
+                  <form action="/updateflight" method="GET">
+                    <input type="submit" value="Click Here" class="btn btn-outline-secondary btn-block">
+                </form>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<div id="foot">
+    <h5><i class="fa fa-copyright"></i>Mumbai International Airport</h5>
+    <p>Chhatrapati Shivaji International Airport
+        Navpada, Chhatrapati Shivaji International Airport Area
+        Vile Parle, Mumbai
+        Maharashtra 400099</p>
+    <p>(91)-(022)-26707440, 26287250</p>
+    <h5><a href="#">Terms And Conditions</a> &nbsp;|&nbsp; <a href="#">Privacy Policy</a>&nbsp;|&nbsp; <a href="#">User Instructions</a> </h6>
+    <% var d = new Date(); %>
+    <p>Website Last Updated <%= d.toString() %> </p>
+    <span><i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-youtube" aria-hidden="true"></i>
+    </span>
+</div>
+<%- include('partials/footer') -%>

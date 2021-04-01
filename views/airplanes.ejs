@@ -1,0 +1,27 @@
+<%- include('partials/header3') -%>
+    <body>
+       <center>
+                
+        <div class="card">
+            <div class="card-body">
+                <div class="info-col">  
+                    <h2>INFORMATION ABOUT ALL THE DISTINCT TYPE <BR>OF AIRPLANES OPERATED IS LISTED HERE :) </h2>
+                </div>
+                <table border="1" cellpadding = 10>
+                    <tr>
+                        <th>SEATS</th>
+                        <th>MODEL_NAME</th>
+                        <th>YEARS_OF_SERVICE</th>
+                    </tr>
+                   <% for(var i=0;i < All.length ;i++) { %>
+                   <tr> 
+                        <td><%= All[i].SEATS %></td> 
+                        <td><%= All[i].MODEL_NAME %></td> 
+                        <td><%= All[i].YEARS_OF_SERVICE %></td> 
+                    </tr>
+                   <% } %>
+                </table>
+            </div>
+        </div>
+       </center>
+<%- include('partials/footer2') -%>

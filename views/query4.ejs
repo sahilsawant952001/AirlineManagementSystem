@@ -1,0 +1,31 @@
+<%- include('partials/header3') -%>
+    <body>
+       <center>
+        <div class="card">
+            <div class="card-body">
+                <div class="info-col">  
+                    <h2>ALL THE AIRPLANES AVAILABLE FOR THE SELECTED AIRLINE :) </h2>
+                </div>
+                <table border="1" cellpadding = 10>
+                    <tr>
+                        <th>AIRPLANE_ID</th>
+                        <th>SEATS</th>
+                        <th>MODEL_NAME</th>
+                        <th>YEARS_OF_SERVICE</th>
+                        <th>AIRLINE_ID</th>      
+                    </tr>
+                   <% for(var i=0;i < All.length ;i++) { %>
+                   <tr> 
+                        <td><%= All[i].AIRPLANE_ID %></td> 
+                        <td><%= All[i].SEATS %></td> 
+                        <td><%= All[i].MODEL_NAME %></td> 
+                        <td><%= All[i].YEARS_OF_SERVICE %></td>
+                        <td><%= All[i].AIRLINE_ID %></td>
+                    </tr>
+                   <% } %>
+                </table>
+        
+            </div>
+        </div>
+       </center>
+<%- include('partials/footer2') -%>

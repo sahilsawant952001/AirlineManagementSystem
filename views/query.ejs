@@ -1,0 +1,141 @@
+<%- include('partials/header2') -%>
+   <div id="query-head">
+       <h1>Query Page</h1>
+        <h3 class="queryh2">Enter Flight Id And Date Of Journey To Get Info About Its Confirmed Tickets</h3>
+        <div class="querybox">
+            <form action="/query1" method="GET">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="text" name='id' placeholder="FLIGHT ID" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" name='date' placeholder="DATE OF JOURNEY" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="submit" class="btn btn-outline-primary btn-block">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <h3 class="queryh2">Enter Flight Id And Date Of Journey To Get Info About Its Cancelled Tickets</h3>
+        <div class="querybox">
+            <form action="/query2" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="text" name='id' placeholder="FLIGHT ID" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="text" name='date' placeholder="DATE OF JOURNEY" class="form-control">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <input type="submit" class="btn btn-outline-primary btn-block">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <h3 class="queryh2">Select Airport Name To Get Info Of All Its Employees</h3>
+        <div class="querybox">
+            <form action="/query3" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Airport Name</label>
+                        <select id="ap_id" name="ap_id" class="form-control">
+                            <option value="51">Louisville International Airport</option>
+                            <option value="52">Chandigarh InternationalAirport</option>
+                            <option value="53">Fort Worth InternationalAirport</option>
+                            <option value="54">Indira Gandhi International Airport</option>
+                            <option value="55">Chatrapati Shivaji Intl Airport</option>
+                            <option value="56">San Francisco International Airport</option>
+                            <option value="57">Frankfurt Airport</option>
+                            <option value="58">George Bush Intercontinental Airport</option>
+                            <option value="59">John F. Kennedy International Airport</option>
+                            <option value="60">Tampa International Airport</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Submit</label>
+                        <input type="submit" class="btn btn-outline-primary btn-block">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <h3 class="queryh2">Select Airline Name To See Details Of All There Airplanes</h3>
+        <div class="querybox">
+            <form action="/query4" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Airline Name</label>
+                        <select id="al_id" name="al_id" class="form-control">
+                            <option value="1">American Airlines</option>
+                            <option value="98">Air India Limited</option>
+                            <option value="125">British Airways</option>
+                            <option value="157">Qatar Airways</option>
+                            <option value="176">Emirates</option>
+                            <option value="220">Lufthansa</option>
+                            <option value="589">Jet Airways</option>
+                            <option value="607">Ethiad Airways</option>
+                            <option value="786">Singapore Airlines</option>
+                            <option value="928">Indigo</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Submit</label>
+                        <input type="submit" class="btn btn-outline-primary btn-block">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <h3 class="queryh2">Select Source And Destination To See All Available Flights On That Route</h3>
+        <div class="querybox">
+            <form action="/query5" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Source</label>
+                        <select id="src" name="src" class="form-control">
+                            <option value="SDF">Louisville International Airport</option>
+                            <option value="IXC">Chandigarh InternationalAirport</option>
+                            <option value="DFW">Fort Worth InternationalAirport</option>
+                            <option value="DEL">Indira Gandhi International Airport</option>
+                            <option value="BOM">Chatrapati Shivaji Intl Airport</option>
+                            <option value="SFO">San Francisco International Airport</option>
+                            <option value="FRA">Frankfurt Airport</option>
+                            <option value="IAH">George Bush Intercontinental Airport</option>
+                            <option value="JFK">John F. Kennedy International Airport</option>
+                            <option value="TPA">Tampa International Airport</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Destination</label>
+                        <select id="dest" name="dest" class="form-control">
+                            <option value="SDF">Louisville International Airport</option>
+                            <option value="IXC">Chandigarh InternationalAirport</option>
+                            <option value="DFW">Fort Worth InternationalAirport</option>
+                            <option value="DEL">Indira Gandhi International Airport</option>
+                            <option value="BOM">Chatrapati Shivaji Intl Airport</option>
+                            <option value="SFO">San Francisco International Airport</option>
+                            <option value="FRA">Frankfurt Airport</option>
+                            <option value="IAH">George Bush Intercontinental Airport</option>
+                            <option value="JFK">John F. Kennedy International Airport</option>
+                            <option value="TPA">Tampa International Airport</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label> No_Of_Stops</label>
+                        <select id="stops" name="stops" class="form-control">
+                            <option value=0>Zero</option>
+                            <option value=1>More Than Zero</option>
+                        </select>
+                    </div>    
+                    <div class="form-group col-md-4">
+                        <!-- <label>Submit</label> -->
+                        <input type="submit" class="btn btn-outline-primary btn-block">
+                    </div>
+                </div>
+            </form>
+        </div>
+   </div>
+<%- include('partials/footer2') -%>

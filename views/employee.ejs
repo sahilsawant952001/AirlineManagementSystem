@@ -1,0 +1,88 @@
+<%- include('partials/header2') -%>
+<div id="employee-head">
+    <h1>Employee Information Portal</h1>
+    <h2 style="color: crimson;">Only for Mumbai Airport !</h2>
+    <div class="querybox">
+        <h3 class="queryh2">Enter Employee ID To Delete Employee Record</h3>
+        <form action="/employee-delete" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input type="text" name='id' placeholder="EMPLOYEE ID" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="submit" class="btn btn-outline-primary btn-block">
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+
+    <div class="querybox">
+        <h3 class="queryh2">Enter Data To Insert New Employee Record</h3>
+        <form action="/employee-insert" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <input type="text" name='id' placeholder="Employee ID" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" name='fname' placeholder="First Name" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" name='mname' placeholder="Middle Name" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" name='lname' placeholder="Last Name" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <input type="text" name='sex' placeholder="Sex" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" name='address' placeholder="Address" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" name='jobtype' placeholder="Jobtype" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" name='age' placeholder="Age" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <input type="text" name='salary' placeholder="Salary" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="text" name='phone' placeholder="Phone" class="form-control">
+                </div>
+                <!-- <div class="form-group col-md-3">
+                    <input type="text" name='ap_id' placeholder="Airport ID" class="form-control">
+                </div> -->
+                <div class="form-group col-md-6"> <!--Note here we have used md-6-->
+                    <input type="submit" class="btn btn-outline-primary btn-block" value="Insert">
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+
+    <div class="querybox">
+        <h3 class="queryh2">Enter Employee ID To Update Salary</h3>
+        <form action="/employee-update" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" name='id' placeholder="Employee ID" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" name='salary' placeholder="Updated Salary" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="submit" class="btn btn-outline-primary btn-block" value="Update">
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+
+</div>
+<%- include('partials/footer2') -%>

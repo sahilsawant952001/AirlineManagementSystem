@@ -1,0 +1,39 @@
+<%- include('partials/header2') -%>
+<div id="update-flight-head">
+    <h1>Update Flight Information</h1>
+    <div class="querybox">
+        <h3 class="queryh2">Update Departure Time Of Flight</h3>
+        <form action="/departure-update" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" name='id' placeholder="Flight ID" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" name='departure' placeholder="Departure Time" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="submit" class="btn btn-outline-primary btn-block" value="Update">
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="querybox">
+        <h3 class="queryh2">Update Arrival Time Of Flight</h3>
+        <form action="/arrival-update" method="POST">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <input type="text" name='id' placeholder="Flight ID" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="text" name='arrival' placeholder="Arrival Time" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <input type="submit" class="btn btn-outline-primary btn-block" value="Update">
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr>
+</div>
+<%- include('partials/footer2') -%>

@@ -1,0 +1,28 @@
+<%- include('partials/header3') -%>
+    <body>
+       <center>
+        <div class="card">
+            <div class="card-body">
+                <div class="info-col">  
+                    <h2>INFORMATION ABOUT ALL THE CITIES IS LISTED HERE :) </h2>
+                </div>
+                <table border="1" cellpadding = 10>
+                    <tr>
+                        <th>City_Name</th>
+                        <th>STATE</th>
+                        <th>COUNTRY</th>
+                        <th>CITY_ID</th>       
+                    </tr>
+                   <% for(var i=0;i < All.length ;i++) { %>
+                   <tr> 
+                        <td><%= All[i].CNAME %></td> 
+                        <td><%= All[i].STATE %></td> 
+                        <td><%= All[i].COUNTRY %></td> 
+                        <td><%= All[i].CITY_ID %></td>
+                    </tr>
+                   <% } %>
+                </table>
+            </div>
+        </div>
+       </center>
+<%- include('partials/footer2') -%>

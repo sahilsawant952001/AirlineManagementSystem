@@ -1,0 +1,32 @@
+<%- include('partials/header3') -%>
+    <body>
+       <center>
+        
+        
+        <div class="card">
+            <div class="card-body">
+                <div class="info-col">  
+                    <h2>INFORMATION ABOUT ALL THE AIRPORTS & THEIR<BR> RESPECTIVE CITIES IS LISTED HERE :) </h2>
+                </div>
+                <table border="1" cellpadding = 10>
+                    <tr>
+                        <th>Airport_ID</th>
+                        <th>Airport_NAME</th>
+                        <th>TERMINALS</th>
+                        <th>CITY_ID</th>
+                        <th>City_Name</th>       
+                    </tr>
+                   <% for(var i=0;i < All.length ;i++) { %>
+                   <tr> 
+                        <td><%= All[i].AP_ID %></td> 
+                        <td><%= All[i].AP_NAME %></td> 
+                        <td><%= All[i].TERMINALS %></td> 
+                        <td><%= All[i].CITY_ID %></td>
+                        <td><%= All[i].CNAME %></td>
+                    </tr>
+                   <% } %>
+                </table>
+            </div>
+        </div>
+       </center>
+<%- include('partials/footer2') -%>

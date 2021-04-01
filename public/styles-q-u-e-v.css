@@ -1,0 +1,80 @@
+body
+{
+    background-image: url('BACK.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    padding: 5% 10%;
+}
+
+#employee-head
+{
+    background-color: #ffffff;
+    padding: 5% 15%;
+}
+
+#employee-head h1
+{
+    margin: 0 0 9% 0;
+    text-align: center;
+    color: dodgerblue;
+}
+
+#update-flight-head
+{
+    background-color: #ffffff;
+    padding: 5% 15%;
+}
+
+#update-flight-head h1
+{
+    margin: 0 0 9% 0;
+    text-align: center;
+    color: dodgerblue;
+}
+
+#query-head
+{
+    background-color: #ffffff;
+    padding: 5% 15%;
+}
+
+#query-head h1
+{
+    margin: 0 0 5% 0;
+    text-align: center;
+    color: dodgerblue;
+}
+
+.queryh2
+{
+    margin: 3% 0;
+    color: dimgrey;
+}
+
+#view-head h1
+{
+    color: #ffffff;
+    margin: 0 0 8% 0;
+    text-align: center;
+}
+
+.box
+{
+    border-radius: 10px;
+}
+
+hr
+{
+    margin: 20% 0;
+}
+
+th
+{
+    background-color: steelblue;
+}
+
+td
+{
+    background-color: white;
+}

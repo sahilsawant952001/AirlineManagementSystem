@@ -1,0 +1,36 @@
+<%- include('partials/header3') -%>
+    <body>
+       <center>
+        <div class="card">
+            <div class="card-body">
+                <div class="info-col">  
+                    <h2>ALL THE FLIGHTS AVAILABLE FOR YOUR SELECTION :)</h2>
+                </div>
+                <table border="1" cellpadding = 10>
+                    <tr>
+                        <th>Flight_Code</th>
+                        <th>DEPARTURE_TIME</th>
+                        <th>ARRIVAL_TIME</th>
+                        <th>DURATION</th>
+                        <th>FLIGHT_TYPE</th>
+                        <th>NO_OF_STOPS</th>
+                        <th>LAYOVER_TIME</th>
+                        <th>AIRLINE_ID</th>       
+                    </tr>
+                   <% for(var i=0;i < All.length ;i++) { %>
+                   <tr> 
+                        <td><%= All[i].FLIGHT_CODE %></td> 
+                        <td><%= All[i].DEPARTURE_TIME %></td>
+                        <td><%= All[i].ARRIVAL_TIME %></td> 
+                        <td><%= All[i].DURATION %></td> 
+                        <td><%= All[i].FLIGHT_TYPE %></td> 
+                        <td><%= All[i].NO_OF_STOPS %></td>
+                        <td><%= All[i].LAYOVER_TIME %></td> 
+                        <td><%= All[i].AIRLINE_ID %></td>
+                    </tr>
+                   <% } %>
+                </table>
+            </div>
+        </div>
+       </center>
+<%- include('partials/footer2') -%>

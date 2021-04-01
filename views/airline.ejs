@@ -1,0 +1,28 @@
+<%- include('partials/header3') -%>
+    <body>
+       <center>
+        <div class="card">
+            <div class="card-body">
+                <div class="info-col">  
+                    <h2>INFORMATION ABOUT ALL THE AIRLINES IS LISTED HERE :) </h2>
+                </div>
+                <table border="1" cellpadding = 10>
+                    <tr>
+                        <th>AIRLINE_ID</th>
+                        <th>AIRLINE_NAME</th>
+                        <th>OWNER</th>
+                        <th>HEADQUARTER</th>      
+                    </tr>
+                   <% for(var i=0;i < All.length ;i++) { %>
+                   <tr> 
+                        <td><%= All[i].AIRLINE_ID %></td> 
+                        <td><%= All[i].AIRLINE_NAME %></td> 
+                        <td><%= All[i].OWNER %></td> 
+                        <td><%= All[i].HEADQUARTER %></td>
+                    </tr>
+                   <% } %>
+                </table>
+            </div>
+        </div>
+       </center>
+<%- include('partials/footer2') -%>

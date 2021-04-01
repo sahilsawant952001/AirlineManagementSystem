@@ -1,0 +1,80 @@
+body
+{
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fa
+{
+    margin: 0 0.5%;
+}
+
+#foot
+{
+    background-color: #373a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 5% 5%;
+
+}
+
+#foot h5 a
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#head
+{
+    background-image: url('MUMBAI-AIRPORT.jpg');
+    height: 100%;
+    width: 100%;
+    padding: 2% 5% 10% 5%;
+}
+
+.info
+{
+    margin: 3% 0;
+}
+
+.main-heading
+{
+   margin: 5% 1.7%;
+   color: #ffffff;
+}
+
+.main-heading h1
+{
+    margin: 4% 0;
+}
+
+.main-heading h4
+{
+    margin: 2% 0;
+}
+
+#mid
+{
+    padding: 5% 3% 8% 3%;
+}
+
+#mid h1
+{
+    margin: 0 0 4% 0;
+    text-align: center;
+    color: #686d76;
+}
+
+.nav-font
+{
+    font-size: 15px;
+}
+
+.no-data
+{
+    margin: 10%;
+}
+
+

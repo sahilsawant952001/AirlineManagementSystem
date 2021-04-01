@@ -1,0 +1,37 @@
+<%- include('partials/header3') -%>
+    <body>
+       <center>
+        <div class="card">
+            <div class="card-body">
+                <div class="info-col">  
+                    <h2>ALL EMPLOYEES OF THE SELECTED AIRPORT : </h2>
+                </div>
+                <table border="1" cellpadding = 10>
+                    <tr>
+                        <th>ID</th>
+                        <th>FNAME</th>
+                        <th>MNAME</th>
+                        <th>LNAME</th>
+                        <th>SEX</th>
+                        <th>JOB TYPE</th>
+                        <th>AGE</th>
+                        <th>SALARY</th>
+                        <th>PHONE</th>
+                    </tr>
+                   <% for(var i=0;i < All.length ;i++) { %>
+                   <tr> 
+                        <td><%= All[i].ID %></td> 
+                        <td><%= All[i].FNAME %></td> 
+                        <td><%= All[i].MNAME %></td> 
+                        <td><%= All[i].LNAME %></td>
+                        <td><%= All[i].SEX %></td>
+                        <td><%= All[i].JOBTYPE %></td>
+                        <td><%= All[i].AGE %></td>
+                        <td><%= All[i].SALARY %></td>
+                        <td><%= All[i].PHONE %></tr>
+                   <% } %>
+                </table>
+            </div>
+        </div>
+       </center>
+<%- include('partials/footer2') -%>
